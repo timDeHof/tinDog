@@ -1,19 +1,31 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  width: 50%;
+}
+.container {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem 10px 2rem 10px;
+}
 #card .dog-img {
-    width: 100%;
+  width: 100%;
 }
 
 #card {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .dog-info {
-    position: absolute;
-    color: white;
-    bottom: 10px;
-    left: 10px;
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 10px;
 }

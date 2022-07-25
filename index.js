@@ -4,7 +4,7 @@ import Dog from './Dog.js';
 
 let currentDogIndex = 0;
 let currentDog = new Dog(dogsData[currentDogIndex]);
-console.log(currentDog.getDogHtml());
+let iswaiting = false;
 document.getElementById('accept-button').addEventListener('click', yes);
 
 render();
@@ -16,6 +16,9 @@ function render() {
 // get the next dogs data and render it
 function getNewDog() {
   currentDogIndex++;
+  if (currentDogIndex === 3) {
+    endOfLine();
+  }
   currentDog = new Dog(dogsData[currentDogIndex]);
   render();
 }
@@ -23,4 +26,8 @@ function getNewDog() {
 function yes() {
   currentDog.setMatchStatus(true);
   getNewDog();
+}
+
+function endOfLine() {
+  document.getElementById('card').innerHTML = '<h1>End of Line</h1>';
 }
