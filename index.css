@@ -12,7 +12,7 @@ body {
   width: 50%;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 1rem 10px 2rem 10px;
+  padding: 1rem 10px 2rem;
 }
 #card .dog-img {
   width: 100%;
